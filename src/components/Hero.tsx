@@ -86,6 +86,10 @@ export default function Hero() {
             />
           </pre>
         </div>
+        {/* Byline */}
+        <p className="mt-5 text-center font-mono text-sm sm:text-base text-black/70">
+          Built by people who’ve scaled systems at
+        </p>
         {/* Logo strip */}
         <LogoStrip />
       </div>
