@@ -94,8 +94,9 @@ export default function Hero() {
         <LogoStrip />
       </div>
 
-      {/* Top-right social icons */}
+      {/* Top-right social icons + label */}
       <div className="absolute right-6 top-6 z-20 flex items-center gap-3">
+        <span className="hidden sm:inline-block font-mono text-xs sm:text-sm text-black/70">Contact us at</span>
         <a
           href="#"
           target="_blank"
