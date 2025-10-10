@@ -56,7 +56,7 @@ function LogoStrip() {
 
 export default function Hero() {
   const prompt = useTypewriter([
-    "Building the runtime where agents live, think, and act ",
+    "A new runtime where agents live, think, and act ",
   ], 22);
 
   return (
@@ -88,7 +88,7 @@ export default function Hero() {
         </div>
         {/* Byline */}
         <p className="mt-5 text-center font-mono text-sm sm:text-base text-black/70">
-          Built by people who’ve scaled systems at
+        from people who scaled systems at
         </p>
         {/* Logo strip */}
         <LogoStrip />
