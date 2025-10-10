@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -11,6 +11,8 @@ import microsoftLogo from "@/images/companylogo/microsoft.png";
 import mitLogo from "@/images/companylogo/mit.png";
 import salesforceLogo from "@/images/companylogo/salesforceblackpng.png";
 import harvardLogo from "@/images/companylogo/harvardlog.png";
+import discordLogo from "@/images/sociallogo/discordlogo.jpg";
+import xLogo from "@/images/sociallogo/xlogo.png";
 
 function useTypewriter(lines: string[], speed = 28) {
   const joined = useMemo(() => lines.join("\n"), [lines]);
@@ -98,11 +100,7 @@ export default function Hero() {
           title="Discord"
           className="grid h-10 w-10 place-items-center rounded-md ring-1 ring-black/10 hover:bg-black/5 transition"
         >
-          <svg viewBox="0 0 24 24" className="h-5 w-5 text-black" fill="currentColor" aria-hidden>
-            <rect x="3" y="6" width="18" height="12" rx="6" />
-            <circle cx="9" cy="12" r="1.5" fill="white" />
-            <circle cx="15" cy="12" r="1.5" fill="white" />
-          </svg>
+          <Image src={discordLogo} alt="Discord" width={20} height={20} className="object-contain" />
         </a>
         <a
           href="#"
@@ -112,18 +110,23 @@ export default function Hero() {
           title="X (Twitter)"
           className="grid h-10 w-10 place-items-center rounded-md ring-1 ring-black/10 hover:bg-black/5 transition"
         >
-          <svg viewBox="0 0 24 24" className="h-5 w-5 text-black" fill="none" aria-hidden>
-            <path d="M4 4L20 20M20 4L4 20" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
-          </svg>
+          <Image src={xLogo} alt="X (Twitter)" width={20} height={20} className="object-contain" />
         </a>
       </div>
 
       {/* Footer */}
-      <div className="pointer-events-none absolute inset-x-0 bottom-4 z-10 text-center">
-        <p className="pointer-events-auto font-mono text-xs sm:text-sm text-black/70">© 2025 Ractor Labs</p>
+      <div className="absolute inset-x-0 bottom-0 z-10">
+        <div className="mx-auto w-full border-t border-black/10" />
+        <p className="py-3 text-center font-mono text-xs sm:text-sm text-black/70">(c) 2025 Ractor Labs</p>
       </div>
 
       
     </div>
   );
 }
+
+
+
+
+
+
