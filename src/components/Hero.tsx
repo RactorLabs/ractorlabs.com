@@ -108,7 +108,7 @@ export default function Hero() {
           <Image src={discordLogo} alt="Discord" width={20} height={20} className="object-contain" />
         </a>
         <a
-          href="#"
+          href="https://x.com/ractorlabs"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="X (Twitter)"
@@ -129,6 +129,7 @@ export default function Hero() {
     </div>
   );
 }
+
 
 
 
