@@ -54,7 +54,7 @@ function LogoStrip() {
 
 export default function Hero() {
   const prompt = useTypewriter([
-    "Engineering the layer that makes your agent run efficiently \u2014 and endlessly.",
+    "Building the foundation where your agent runs effortlessly.",
   ], 22);
 
   return (
@@ -118,9 +118,10 @@ export default function Hero() {
         </a>
       </div>
 
-      {/* Footer */}
-      <div className="pointer-events-none absolute inset-x-0 bottom-4 z-10 text-center">
-        <p className="pointer-events-auto font-mono text-xs sm:text-sm text-black/70">© 2025 Ractor Labs</p>
+      {/* Footer with subtle top border */}
+      <div className="absolute inset-x-0 bottom-0 z-10">
+        <div className="mx-auto w-full border-t border-black/10" />
+        <p className="py-3 text-center font-mono text-xs sm:text-sm text-black/70">© 2025 Ractor Labs</p>
       </div>
 
       
