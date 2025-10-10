@@ -88,8 +88,8 @@ export default function Hero() {
         <LogoStrip />
       </div>
 
-      {/* Bottom-right social icons */}
-      <div className="absolute right-6 bottom-6 z-20 flex items-center gap-3">
+      {/* Top-right social icons */}
+      <div className="absolute right-6 top-6 z-20 flex items-center gap-3">
         <a
           href="#"
           target="_blank"
@@ -116,6 +116,11 @@ export default function Hero() {
             <path d="M4 4L20 20M20 4L4 20" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
           </svg>
         </a>
+      </div>
+
+      {/* Footer */}
+      <div className="pointer-events-none absolute inset-x-0 bottom-4 z-10 text-center">
+        <p className="pointer-events-auto font-mono text-xs sm:text-sm text-black/70">© 2025 Ractor Labs</p>
       </div>
 
       
