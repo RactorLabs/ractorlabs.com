@@ -36,7 +36,7 @@ function LogoStrip() {
   ];
 
   return (
-    <div className="mx-auto mt-4 w-[min(1100px,94vw)] py-4">
+    <div className="mx-auto w-[min(1100px,94vw)] py-4">
       <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 items-center justify-items-center gap-x-4 sm:gap-x-6 md:gap-x-8 gap-y-4 sm:gap-y-6">
         {items.map((it, i) => (
           <div key={i} className="flex h-10 sm:h-12 md:h-14 w-full items-center justify-center">
@@ -101,7 +101,7 @@ export default function Hero() {
         </p>
 
         {/* Byline */}
-        <p className="mt-8 text-center font-mono text-sm sm:text-base text-black/70">
+        <p className="mt-12 text-center font-mono text-sm sm:text-base text-black/70">
           Built by engineers from
         </p>
 
@@ -117,6 +117,7 @@ export default function Hero() {
     </div>
   );
 }
+
 
 
 
