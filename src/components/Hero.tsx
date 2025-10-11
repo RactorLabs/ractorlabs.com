@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import type { StaticImageData } from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 import ractorLogo from "@/images/ractorlablogo.png";
 import amazonLogo from "@/images/companylogo/amazonblakc.png";
@@ -13,6 +14,16 @@ import salesforceLogo from "@/images/companylogo/salesforceblackpng.png";
 import harvardLogo from "@/images/companylogo/harvardlog.png";
 import discordLogo from "@/images/sociallogo/discordlogo.jpg";
 import xLogo from "@/images/sociallogo/xlogo.png";
+
+function useTypewriter(text: string, speed = 26) {
+  const [i, setI] = React.useState(0);
+  React.useEffect(() => {
+    setI(0);
+    const id = setInterval(() => setI((v) => (v < text.length ? v + 1 : v)), speed);
+    return () => clearInterval(id);
+  }, [text, speed]);
+  return text.slice(0, i);
+}
 
 function LogoStrip() {
   const items: { src: StaticImageData; alt: string }[] = [
@@ -38,6 +49,7 @@ function LogoStrip() {
 }
 
 export default function Hero() {
+  const headline = useTypewriter("A new runtime where agents reason and act", 24);
   return (
     <div className="relative flex min-h-screen items-center justify-center bg-white text-black">
       {/* Top-left brand: logo + name */}
@@ -79,7 +91,13 @@ export default function Hero() {
           className="font-mono font-semibold text-center text-black text-[32px] sm:text-[40px] md:text-[48px] leading-[1.3] whitespace-nowrap"
           style={{ fontFamily: '"Courier New", Courier, monospace' }}
         >
-          A new runtime where agents reason and act
+          {headline}
+          <motion.span
+            aria-hidden
+            className="inline-block h-[1em] w-[0.45ch] translate-y-[0.15em] align-baseline bg-black"
+            animate={{ opacity: [1, 1, 0, 0] }}
+            transition={{ repeat: Infinity, duration: 1.1 }}
+          />
         </p>
 
         {/* Byline */}
@@ -99,4 +117,5 @@ export default function Hero() {
     </div>
   );
 }
+
 
