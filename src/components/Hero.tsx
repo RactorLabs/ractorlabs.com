@@ -88,7 +88,7 @@ export default function Hero() {
       {/* Main heading */}
       <div className="z-10 w-[min(1200px,94vw)] px-4 sm:px-6">
         <p
-          className="font-mono font-semibold text-center text-black text-[26px] sm:text-[36px] md:text-[48px] leading-[1.3] md:whitespace-nowrap whitespace-normal"
+          className="font-mono font-semibold text-center text-black text-[26px] sm:text-[36px] md:text-[48px] leading-[1.3] whitespace-normal"
           style={{ fontFamily: '"Courier New", Courier, monospace' }}
         >
           {headline}
@@ -117,6 +117,7 @@ export default function Hero() {
     </div>
   );
 }
+
 
 
 
