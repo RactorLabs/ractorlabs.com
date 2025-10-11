@@ -102,7 +102,7 @@ export default function Hero() {
 
         {/* Byline */}
         <p className="mt-4 sm:mt-5 text-center font-mono text-sm sm:text-base text-black/70">
-          Built by people who’ve scaled systems at
+          Built by engineers from
         </p>
 
         {/* Logo strip */}
@@ -117,6 +117,7 @@ export default function Hero() {
     </div>
   );
 }
+
 
 
 
