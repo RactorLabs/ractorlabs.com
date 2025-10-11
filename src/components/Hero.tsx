@@ -76,7 +76,7 @@ export default function Hero() {
       {/* Main heading */}
       <div className="z-10 w-[min(1200px,94vw)] px-6">
         <p
-          className="font-mono font-semibold text-center text-black text-[32px] sm:text-[40px] md:text-[48px] leading-[1.3]"
+          className="font-mono font-semibold text-center text-black text-[32px] sm:text-[40px] md:text-[48px] leading-[1.3] whitespace-nowrap"
           style={{ fontFamily: '"Courier New", Courier, monospace' }}
         >
           A new runtime where agents reason and act
@@ -99,3 +99,4 @@ export default function Hero() {
     </div>
   );
 }
+
