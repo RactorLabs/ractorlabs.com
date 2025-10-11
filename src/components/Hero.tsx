@@ -37,10 +37,10 @@ function LogoStrip() {
 
   return (
     <div className="mx-auto mt-8 w-[min(1100px,94vw)] py-4">
-      <div className="grid grid-cols-6 items-center justify-items-center gap-x-6 sm:gap-x-8">
+      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 items-center justify-items-center gap-x-4 sm:gap-x-6 md:gap-x-8 gap-y-4 sm:gap-y-6">
         {items.map((it, i) => (
-          <div key={i} className="flex h-12 md:h-14 w-full items-center justify-center">
-            <Image src={it.src} alt={it.alt} className="h-8 md:h-10 w-auto object-contain" />
+          <div key={i} className="flex h-10 sm:h-12 md:h-14 w-full items-center justify-center">
+            <Image src={it.src} alt={it.alt} className="h-6 sm:h-8 md:h-10 w-auto object-contain" />
           </div>
         ))}
       </div>
@@ -57,7 +57,7 @@ export default function Hero() {
         <div className="relative h-11 w-11 overflow-hidden rounded-md ring-1 ring-black/10" aria-hidden>
           <Image src={ractorLogo} alt="Ractor Labs logo" fill sizes="44px" className="object-contain" priority />
         </div>
-        <span className="text-black font-semibold tracking-tight text-[18px] sm:text-[20px]">Ractor Labs</span>
+        <span className="text-black font-semibold tracking-tight text-[16px] sm:text-[20px]">Ractor Labs</span>
       </div>
 
       {/* Top-right social icons + label */}
@@ -86,9 +86,9 @@ export default function Hero() {
       </div>
 
       {/* Main heading */}
-      <div className="z-10 w-[min(1200px,94vw)] px-6">
+      <div className="z-10 w-[min(1200px,94vw)] px-4 sm:px-6">
         <p
-          className="font-mono font-semibold text-center text-black text-[32px] sm:text-[40px] md:text-[48px] leading-[1.3] whitespace-nowrap"
+          className="font-mono font-semibold text-center text-black text-[26px] sm:text-[36px] md:text-[48px] leading-[1.3] md:whitespace-nowrap whitespace-normal"
           style={{ fontFamily: '"Courier New", Courier, monospace' }}
         >
           {headline}
@@ -101,7 +101,7 @@ export default function Hero() {
         </p>
 
         {/* Byline */}
-        <p className="mt-5 text-center font-mono text-sm sm:text-base text-black/70">
+        <p className="mt-4 sm:mt-5 text-center font-mono text-sm sm:text-base text-black/70">
           Built by people who’ve scaled systems at
         </p>
 
@@ -117,5 +117,6 @@ export default function Hero() {
     </div>
   );
 }
+
 
 
