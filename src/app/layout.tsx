@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     template: "%s · Ractor Labs",
   },
   description:
-    "A new runtime where agents reason and act.",
+    "Hardware-level orchestration for the next generation of agents.",
   applicationName: "Ractor Labs",
   keywords: [
     "Ractor Labs",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Ractor Labs",
     description:
-      "A new runtime where agents reason and act.",
+      "Hardware-level orchestration for the next generation of agents.",
     url: "/",
     siteName: "Ractor Labs",
     locale: "en_US",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Ractor Labs",
     description:
-      "A new runtime where agents reason and act.",
+      "Hardware-level orchestration for the next generation of agents.",
     images: ["/vercel.svg"],
   },
 };
