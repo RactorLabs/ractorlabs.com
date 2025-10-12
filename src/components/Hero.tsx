@@ -49,7 +49,7 @@ function LogoStrip() {
 }
 
 export default function Hero() {
-  const headline = useTypewriter(" Infrastructure-level orchestration for the next generation of agents", 24);
+  const headline = useTypewriter(" Infra-level orchestration for the next generation of agents", 24);
   return (
     <div className="relative flex min-h-screen items-center justify-center bg-white text-black">
       {/* Top-left brand: logo + name */}
@@ -117,6 +117,7 @@ export default function Hero() {
     </div>
   );
 }
+
 
 
 
