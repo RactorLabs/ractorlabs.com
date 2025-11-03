@@ -1,19 +1,12 @@
 ﻿"use client";
 
 import Image from "next/image";
-import type { StaticImageData } from "next/image";
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import GlitchText from "./GlitchText";
 import ScreenLines from "./ScreenLines";
 
 import ractorLogo from "@/images/ractorlablogo.png";
-import logo1 from "@/images/logos/image 3.png";
-import logo2 from "@/images/logos/image 4.png";
-import logo3 from "@/images/logos/image 5.png";
-import logo4 from "@/images/logos/image 6.png";
-import logo5 from "@/images/logos/image 7.png";
-import logo6 from "@/images/logos/image 8.png";
 import discordLogo from "@/images/sociallogo/discordlogo.jpg";
 import xLogo from "@/images/sociallogo/xlogo.png";
 
@@ -27,29 +20,7 @@ function useTypewriter(text: string, speed = 26) {
   return text.slice(0, i);
 }
 
-function LogoStrip() {
-  const items: { src: StaticImageData; alt: string; scale?: number }[] = [
-    { src: logo1, alt: "Logo 1" },
-    { src: logo2, alt: "Logo 2" },
-    { src: logo3, alt: "Logo 3" },
-    { src: logo4, alt: "Logo 4" ,scale: 1.9},
-    // Make this specific logo a bit larger so it reads better visually
-    { src: logo5, alt: "Logo 5", scale: 1.25 },
-    { src: logo6, alt: "Logo 6" ,scale: 1.8 },
-  ];
-
-  return (
-    <div className="mx-auto w-[min(1100px,94vw)] py-4">
-      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 items-center justify-items-center gap-x-4 sm:gap-x-6 md:gap-x-8 gap-y-4 sm:gap-y-6">
-        {items.map((it, i) => (
-          <div key={i} className="flex h-10 sm:h-12 md:h-14 w-full items-center justify-center" style={{ transform: `scale(${it.scale ?? 1})` }}>
-            <Image src={it.src} alt={it.alt} className="h-6 sm:h-8 md:h-10 w-auto object-contain" />
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
+// Logo strip removed per request
 
 export default function Hero() {
   const headline = useTypewriter("On a mission to make AI more productive.", 20);
@@ -116,14 +87,6 @@ export default function Hero() {
             className="font-mono font-semibold text-white text-[26px] sm:text-[36px] md:text-[48px]"
           />
         </div>
-
-        {/* Byline */}
-        <p className="mt-12 text-center font-mono text-sm sm:text-base text-white/70">
-          By engineers from
-        </p>
-
-        {/* Logo strip */}
-        <LogoStrip />
       </div>
 
       {/* Footer */}
