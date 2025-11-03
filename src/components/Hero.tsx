@@ -52,7 +52,7 @@ function LogoStrip() {
 }
 
 export default function Hero() {
-  const headline = useTypewriter("On a mission to make agents productive.", 20);
+  const headline = useTypewriter("On a mission to make AI more productive.", 20);
   return (
     <div className="relative flex min-h-screen items-center justify-center bg-black text-white">
       <ScreenLines />
@@ -78,7 +78,7 @@ export default function Hero() {
           <Image src={discordLogo} alt="Discord" width={20} height={20} className="object-contain" />
         </a>
         <a
-          href="https://github.com/RactorLabs/ractor"
+          href="https://github.com/RactorLabs"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="GitHub"
