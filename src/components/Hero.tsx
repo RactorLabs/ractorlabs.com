@@ -23,7 +23,7 @@ function useTypewriter(text: string, speed = 26) {
 // Logo strip removed per request
 
 export default function Hero() {
-  const headline = useTypewriter("On a mission to make AI more productive.", 20);
+  const headline = useTypewriter("On a mission to make AI productive.", 20);
   return (
     <div className="relative flex min-h-screen items-center justify-center bg-black text-white">
       <ScreenLines />
@@ -97,6 +97,7 @@ export default function Hero() {
     </div>
   );
 }
+
 
 
 
